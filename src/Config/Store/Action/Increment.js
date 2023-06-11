@@ -9,4 +9,26 @@ const inc_count = (dispatch) => {
     )
 }   
 
-export default inc_count
+const dec_count = (dispatch) => {
+    return (
+        (dispatch) => {
+            dispatch({
+
+                type: "Decrement"
+            })
+        }
+    )
+} 
+const reset = (dispatch) => {
+    return (
+        (dispatch) => {
+            dispatch({
+
+                type: "Reset"
+            })
+        }
+    )
+} 
+
+
+export {inc_count,dec_count,reset}
